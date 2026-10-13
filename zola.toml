@@ -1,0 +1,95 @@
+# The URL this site will be built for
+base_url = "https://yerbamate.dev"
+
+# The basic site information
+title = "yerbamate.dev"
+author = "arcstur"
+description = "yerba mate powered software"
+
+# theme
+theme = "persona"
+
+# Prevent .src.md, .bib, and .csl files from being rendered as pages
+ignored_content = ["*.src.md", "*.bib", "*.csl"]
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to automatically generate a feed
+generate_feeds = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+taxonomies = [
+  { name = "tags", feed = true },
+  { name = "categories", feed = true },
+]
+
+[markdown]
+
+# Whether external links are to be opened in a new tab
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons
+external_links_target_blank = true
+
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = false
+
+# Whether to set rel="noreferrer" for all external links
+external_links_no_referrer = true
+
+[markdown.highlighting]
+# Use "class" for themes that generate CSS files
+style = "class"
+# Theme for dark mode
+dark_theme = "github-dark"
+# Theme for light mode
+light_theme = "github-light"
+
+[extra]
+
+[extra.persona]
+# Note: landing page title, subtitles, and icon are configured in `content/_index.md`
+
+# Maximum entries or category cards shown in each list on the home page.
+# Full section pages remain unlimited. Set to 0 to show only the View all link.
+home_items_limit = 3
+
+# Label for the navigation through each post's sections.
+outline_title = "Outline"
+
+# Citation style
+# This configuration controls how references are formatted and displayed throughout the site.
+#
+# Available options include:
+# - "apa":
+# - "ieee":
+citation_style = "ieee"
+
+# Social links
+# A list of your social media profiles to display.
+#
+# Find icon classes from:
+# - Bootstrap Icons: https://icons.getbootstrap.com/
+# - Academicons: https://jpswalsh.github.io/academicons/
+social_links = [
+  { name = "GitHub", url = "https://github.com/arcstur", icon_class = "bi bi-github" },
+]
+
+# Contact information
+# A list of contact information to display.
+#
+# Find icon classes from:
+# - Bootstrap Icons: https://icons.getbootstrap.com/
+contact_infos = [
+  { item = "_navigation", content = "Contact", icon_class = "bi bi-postcard" },
+  { item = "Email", content = "Send me a message!", icon_class = "bi bi-envelope"}
+]
+# To set up web3form contact form, please create your public access key (following the instruction at https://web3forms.com/).
+# To remove the contact form, please comment out the following line.
+web3form_public_key = "4bb744f3-25f5-43a0-9370-6a15f25f714c"
+
+# Footer
+quote = "first make it work, then make it right, and, finally, make it fast"
+copyright = "all content released in CC BY-SA 4.0 unless stated otherwise"
+credits = "Powered by [Zola](https://www.getzola.org/), [Bootstrap](https://getbootstrap.com/), and [Web3Forms](https://web3forms.com/)"

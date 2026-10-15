@@ -4,7 +4,7 @@ base_url = "https://yerbamate.dev"
 # The basic site information
 title = "yerbamate.dev"
 author = "arcstur"
-description = "yerba mate powered software"
+description = "developer, teacher and wikimedian"
 
 # theme
 theme = "persona"
@@ -83,13 +83,14 @@ social_links = [
 # - Bootstrap Icons: https://icons.getbootstrap.com/
 contact_infos = [
   { item = "_navigation", content = "Contact", icon_class = "bi bi-postcard" },
-  { item = "Email", content = "Send me a message!", icon_class = "bi bi-envelope"}
+  { item = "Email", content = "Send me a message!", icon_class = "bi bi-envelope"},
+  { item = "Resume", content = "Request my CV", icon_class = "bi bi-file-earmark-person"},
 ]
 # To set up web3form contact form, please create your public access key (following the instruction at https://web3forms.com/).
 # To remove the contact form, please comment out the following line.
 web3form_public_key = "4bb744f3-25f5-43a0-9370-6a15f25f714c"
 
 # Footer
-quote = "first make it work, then make it right, and, finally, make it fast"
+quote = "make it work, make it right, make it fast"
 copyright = "all content released in CC BY-SA 4.0 unless stated otherwise"
 credits = "Powered by [Zola](https://www.getzola.org/), [Bootstrap](https://getbootstrap.com/), and [Web3Forms](https://web3forms.com/)"

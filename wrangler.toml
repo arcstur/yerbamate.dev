@@ -1,0 +1,8 @@
+name = "yerbamate"
+compatibility_date = "2026-10-15"
+
+[build]
+command = "bash ./build.sh"
+
+[assets]
+directory = "./public"
